@@ -1,7 +1,7 @@
 const Manager = require('../lib/Manager');
 
 test('creates a Manager object', () => {
-    const manager = new Manager('Jane Doe', '0000', 'janedoe@email.com');
+    const manager = new Manager('Jane Doe', '0000', 'janedoe@email.com', 1);
 
     expect(manager.getName()).toBe('Jane Doe');
     expect(manager.getId()).toBe('0000');
@@ -9,7 +9,13 @@ test('creates a Manager object', () => {
 });
 
 test('returns "Manager"', () => {
-    const manager = new Manager('Jane Doe', '0000', 'janedoe@email.com');
+    const manager = new Manager('Jane Doe', '0000', 'janedoe@email.com', 1);
 
     expect(manager.getRole()).toBe('Manager');
-})
+});
+
+test('return office number', () => {
+    const manager = new Manager('Jane Doe', '0000', 'janedoe@email.com', 1);
+
+    expect(manager.getOfficeNumber()).toBe(1);
+});

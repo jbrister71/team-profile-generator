@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+}
+
+header {
+    margin: 0;
+    padding: .5vw;
+    background-color: darkred;
+    color: white;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    border: 1px solid black;
+    background-color: #f4f2f2;
+    margin: 2vw 1vw;
+    width: 25vw;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
+}
+
+.card-header {
+    border: 1px solid black;
+    background-color: blue;
+    color: white;
+}
+
+.header-info {
+    margin: 1vw;
+}
+
+.role {
+    font-weight: normal;
+}
+
+.card-body {
+    margin: 2vw;
+}
+
+.card-text {
+    margin: 0;
+    padding: .5vw;
+    border: 1px solid lightgray;
+    background-color: white;
+}
