@@ -99,7 +99,7 @@ const managerQuestions = [
     {
         type: 'input',
         name: "name",
-        message: "What is this employee's name?",
+        message: "What is the manager's name?",
         validate: nameInput => {
             if(nameInput) {
                 return true;
@@ -112,7 +112,7 @@ const managerQuestions = [
     {
         type: 'input',
         name: 'id',
-        message: "What is this employee's id?",
+        message: "What is the manager's id?",
         validate: idInput => {
             if(idInput) {
                 return true;
@@ -125,7 +125,7 @@ const managerQuestions = [
     {
         type: 'input',
         name: 'email',
-        message: "What is this employee's email?",
+        message: "What is the manager's email?",
         validate: emailInput => {
             if(emailInput) {
                 return true;
@@ -138,7 +138,7 @@ const managerQuestions = [
     {
         type: 'input',
         name: 'office',
-        message: "What is this employee's office number?",
+        message: "What is the manager's office number?",
         validate: officeInput => {
             if(officeInput) {
                 return true;

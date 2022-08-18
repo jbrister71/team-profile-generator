@@ -78,6 +78,12 @@ function generateSite(html) {
 }
 
 function init() {
+    console.log(`
+    =======================================
+    Welcome to the Team Profile Generator
+    =======================================
+    `)
+
     promptManagerQuestions()
         .then(data => {
             return template.generateHTML(employeeArr);
