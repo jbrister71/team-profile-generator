@@ -1,3 +1,4 @@
+// Questions for Engineer and Intern
 const employeeQuestions = [
     {
         type: 'input',
@@ -95,6 +96,7 @@ const employeeQuestions = [
     }
 ];
 
+// Seperate questions for Manager so it can be called first
 const managerQuestions = [
     {
         type: 'input',

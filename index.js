@@ -8,6 +8,7 @@ const inquirer = require('inquirer');
 
 const employeeArr = [];
 
+// Creates an Engineer or Intern based on questions asked
 function promptGeneralQuestions() {
     return inquirer.prompt(questionTemplate.employeeQuestions)
             .then(data => {
@@ -35,6 +36,7 @@ function promptGeneralQuestions() {
             });
 }
 
+// Creates a Manager
 function promptManagerQuestions() {
     return inquirer.prompt(questionTemplate.managerQuestions)
         .then(data => {
@@ -53,6 +55,7 @@ function promptManagerQuestions() {
         })
 };
 
+// Writes the html file and sets stylesheet
 function generateSite(html) {
     fs.writeFile('./dist/index.html', html, err => {
         if(err) {

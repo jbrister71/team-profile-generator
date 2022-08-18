@@ -1,3 +1,4 @@
+// The next three functions handle html for employee cards
 function generateManager(employee) {
     const { name, email, id, office } = employee;
     
@@ -52,6 +53,7 @@ function generateIntern(employee) {
     `
 }
 
+// Uses the getRole() function to determine which type of card to build
 function generateEmployees(employeeData) {
     let employeeTemplate = '';
     
@@ -70,6 +72,7 @@ function generateEmployees(employeeData) {
     return employeeTemplate;
 }
 
+// Basic html
 function generateHTML(employeeData) {
     return `<!DOCTYPE html>
     <html lang="en">
