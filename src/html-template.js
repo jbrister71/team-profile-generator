@@ -56,15 +56,15 @@ function generateEmployees(employeeData) {
     let employeeTemplate = '';
     
     for(let i = 0; i < employeeData.length; i++) {
-        if(employeeData[i].role == 'Manager') {
+        if(employeeData[i].getRole() == 'Manager') {
             console.log('Manager');
             employeeTemplate += generateManager(employeeData[i]);
         }
-        else if(employeeData[i].role == 'Engineer') {
+        else if(employeeData[i].getRole() == 'Engineer') {
             console.log('Engineer');
             employeeTemplate += generateEngineer(employeeData[i]);
         }
-        else if(employeeData[i].role == 'Intern') {
+        else if(employeeData[i].getRole() == 'Intern') {
             console.log('Intern');
             employeeTemplate += generateIntern(employeeData[i]);
         }
@@ -79,7 +79,7 @@ function generateHTML(employeeData) {
     <head>
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Team Profile</title>
-        <link rel="stylesheet" href="../style.css" />
+        <link rel="stylesheet" href="./style.css" />
     </head>
 
     <body>

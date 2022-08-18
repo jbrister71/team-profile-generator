@@ -14,8 +14,10 @@ test('returns "Manager"', () => {
     expect(manager.getRole()).toBe('Manager');
 });
 
-test('return office number', () => {
+test('set new office number', () => {
     const manager = new Manager('Jane Doe', '0000', 'janedoe@email.com', 1);
 
-    expect(manager.getOfficeNumber()).toBe(1);
+    manager.setOfficeNumber(2);
+
+    expect(manager.getOfficeNumber()).toBe(2);
 });
