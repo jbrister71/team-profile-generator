@@ -57,15 +57,12 @@ function generateEmployees(employeeData) {
     
     for(let i = 0; i < employeeData.length; i++) {
         if(employeeData[i].getRole() == 'Manager') {
-            console.log('Manager');
             employeeTemplate += generateManager(employeeData[i]);
         }
         else if(employeeData[i].getRole() == 'Engineer') {
-            console.log('Engineer');
             employeeTemplate += generateEngineer(employeeData[i]);
         }
         else if(employeeData[i].getRole() == 'Intern') {
-            console.log('Intern');
             employeeTemplate += generateIntern(employeeData[i]);
         }
     }
