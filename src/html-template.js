@@ -29,7 +29,7 @@ function generateEngineer(employee) {
                     <div class="card-body">
                         <p class="card-text">Id: ${id}</p>
                         <p class="card-text">Email: <a href="mailto: ${email}">${email}</a></p>
-                        <p class="card-text">Github: <a href="https://github.com/${github}">${github}</a></p>
+                        <p class="card-text">Github: <a href="https://github.com/${github}" target="_blank" rel="noreferrer noopener">${github}</a></p>
                     </div>
                 </div>     
     `
