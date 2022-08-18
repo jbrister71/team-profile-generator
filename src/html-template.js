@@ -10,7 +10,7 @@ function generateManager(employee) {
                     </div>
                     <div class="card-body">
                         <p class="card-text">Id: ${id}</p>
-                        <p class="card-text">Email: ${email}</p>
+                        <p class="card-text">Email: <a href="mailto: ${email}">${email}</a></p>
                         <p class="card-text">Office Number: ${office}</p>
                     </div>
                 </div>     
@@ -28,8 +28,8 @@ function generateEngineer(employee) {
                     </div>
                     <div class="card-body">
                         <p class="card-text">Id: ${id}</p>
-                        <p class="card-text">Email: ${email}</p>
-                        <p class="card-text">Github: ${github}</p>
+                        <p class="card-text">Email: <a href="mailto: ${email}">${email}</a></p>
+                        <p class="card-text">Github: <a href="https://github.com/${github}">${github}</a></p>
                     </div>
                 </div>     
     `
@@ -46,7 +46,7 @@ function generateIntern(employee) {
                     </div>
                     <div class="card-body">
                         <p class="card-text">Id: ${id}</p>
-                        <p class="card-text">Email: ${email}</p>
+                        <p class="card-text">Email: <a href="mailto: ${email}">${email}</a></p>
                         <p class="card-text">School: ${school}</p>
                     </div>
                 </div>     
